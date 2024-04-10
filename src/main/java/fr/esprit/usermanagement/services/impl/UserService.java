@@ -221,7 +221,6 @@ public class UserService implements IUserService {
         Keycloak keycloak = KeycloakConfig.getInstance();
         RealmResource realmResource = keycloak.realm(KeycloakConfig.realm);
         RolesResource rolesResource = realmResource.roles();
-
         List<RoleRepresentation> roleRepresentations = rolesResource.list();
         List<Role> roles = new ArrayList<>();
 
